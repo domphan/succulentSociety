@@ -1,0 +1,47 @@
+
+<div class="jumbotron jumbotron-fluid bg4">
+  <div class="container">
+    <h1 class="display-3"><strong>Where to purchase</strong></h1>
+    <p class="lead">Top gardening and nursery centers near you.</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <h1>Enter a zip code</h1>
+  </div>
+  <div class="row">
+    <form>
+      <input type="text" name="zip" placeholder="zip code" id="zipCode">
+      <input type="submit" id="submitb" name="" value="submit">
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  {{#if searchResults}}
+    <div class="container results">
+      <div class="row">
+        <h2>Search Results:</h2>
+      </div>
+    </div>
+    {{#each searchResults}}
+    <div class="row searchColor">
+      <div class="col-6">
+        <h2>{{this.name}}</h2>
+        <h5>{{this.location.display_address}}</h5>
+        <h8>{{this.display_phone}}</h8>
+        <p></p>
+        <h8><a href="{{this.url}}">View on Yelp</a></h8>
+      </div>
+      <div class="col-6">
+        <img class="shopimg" src={{this.image_url}}></img>
+      </div>
+    </div>
+    <div class="searchRes">
+
+    </div>
+    {{/each}}
+  {{/if}}
+</div>

@@ -1,0 +1,101 @@
+.navbar-brand {
+  font-family: 'Pompiere', cursive;
+  font-size: 3em;
+}
+
+.prettyFont {
+  font-family: 'Pompiere', cursive;
+  font-size: 2em;
+  padding-top: .2em;
+}
+.bg1 {
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url('https://images.unsplash.com/photo-1510116129875-b4a01f92c8fe?auto=format&fit=crop&w=1351&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D') no-repeat center center;
+  width: 100%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.25)
+  ),
+  url('http://www.cassidytuttle.com/wp-content/uploads/2012/07/Succulent-Leaf-Cuttings-2.jpg') no-repeat center center;
+  width: 100%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg3 {
+  background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.25),
+        rgba(0, 0, 0, 0.25)
+      ),
+      url('http://www.cassidytuttle.com/wp-content/uploads/2012/06/Succulent-Mix.jpg') no-repeat center center;
+  width: 100%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg4 {
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('https://images.unsplash.com/photo-1461886988361-c3d1d47fd6f6?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D') no-repeat center center;
+  width: 100%;
+  height: 350px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 350px;
+  background-color: transparent;
+  color: white;
+  /* text-shadow: black 0.2em 0.2em 0.2em; */
+}
+
+.carousel-caption {
+  top: 5em;
+  bottom: auto;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.searchRes {
+  margin-bottom: 50px;
+}
+.searchColor {
+  background-color: #e6fff2;
+}
+
+.shopimg {
+  height: 15em;
+  width: auto;
+  display:block;
+  margin:auto;
+}
+
+.results {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
