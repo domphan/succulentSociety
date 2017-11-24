@@ -1,13 +1,32 @@
 
+<!--  If user doesn't have a search query-->
+{{#unless searchResults}}
 <div class="jumbotron jumbotron-fluid bg4">
   <div class="container">
     <h1 class="display-3"><strong>Where to purchase</strong></h1>
     <p class="lead">Top gardening and nursery centers near you.</p>
   </div>
 </div>
+{{/unless}}
 
+<!-- Remove jumbotron to show a scrollable search page -->
+{{#if searchResults}}
+<div class="container zippy">
+  <div class="row">
+    <h1>Enter another zip code</h1>
+  </div>
+  <div class="row">
+    <form>
+      <input type="text" name="zip" placeholder="zip code" id="zipCode">
+      <input type="submit" id="submitb" name="" value="submit">
+    </form>
+  </div>
+</div>
+{{/if}}
 
-<div class="container">
+<!--  If no search include this with the jumbotron-->
+{{#unless searchResults}}
+<div class="container zippy">
   <div class="row">
     <h1>Enter a zip code</h1>
   </div>
@@ -18,8 +37,9 @@
     </form>
   </div>
 </div>
+{{/unless}}
 
-<div class="container">
+<div id="forScroll" class="container"  {{#if searchResults}}style="border: 1px dashed lightgreen;"{{/if}}>
   {{#if searchResults}}
     <div class="container results">
       <div class="row">

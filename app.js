@@ -7,7 +7,7 @@ var landingRoutes      = require("./routes/index");
 var caringRoutes       = require("./routes/caring");
 var troubleshootRoutes = require("./routes/troubleshoot");
 var propagationRoutes  = require("./routes/propagation");
-var whereToRoutes       = require("./routes/whereTo");
+var whereToRoutes      = require("./routes/whereTo");
 
 app.engine('handlebars', handlebars.engine);
 app.use(bodyParser.urlencoded({extended:true}));
@@ -31,6 +31,6 @@ app.use(function(err, req, res, next){
   res.send('Error 500');
 });
 
-app.listen(3000, 'localhost', function(){
-  console.log('Express server started on localhost:3000');
+app.listen(7998, function(){
+  console.log('Express server started on 7998');
 });
