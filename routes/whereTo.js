@@ -3,8 +3,8 @@ var router = express.Router();
 var yelp = require('yelp-fusion');
 
 //yelp API key
-var clientId = '9yqFTHbQ1yOYkgGdrZMduw'
-var clientSecret = 'RAGTqrJ0Wvqk9PDWbp0bb1OYCAitCMhtyikG5LHGVXcCvlGQl6BRoSdoFkJQuW9v'
+var clientId = ''
+var clientSecret = ''
 var searchResults = [];
 
 var searchRequest = {
